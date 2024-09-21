@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/bt_ctl_rtc_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rtc 시간 업데이트"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/bt_ctl_bat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="배터리"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/bt_ctl_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="설정 리셋"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/bt_ctl_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interval 업데이트"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <EditText
+        android:id="@+id/edit_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Interval (0~9)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/bt_ctl_ssid_ram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSID 변경(RAM)"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/bt_ctl_ssid_rom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSID 변경(ROM)"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <EditText
+        android:id="@+id/edit_ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="SSID"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <Button
+        android:id="@+id/bt_ctl_scan_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스캔 on"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <Button
+        android:id="@+id/bt_ctl_scan_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스캔 off"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/bt_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기기 선택"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/bt_connect_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연결 수립"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/bt_connect_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연결 해제"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/tv_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Sent Command"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.95" />
+
+
+    <TextView
+        android:id="@+id/tv_rx"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:text="Received Data"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
