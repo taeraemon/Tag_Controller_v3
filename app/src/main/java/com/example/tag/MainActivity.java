@@ -53,8 +53,10 @@ public class MainActivity extends AppCompatActivity {
     Button bt_ctl_bat;
     Button bt_ctl_rtc_update;
     Button bt_ctl_reset;
+    Button bt_ctl_server;
     EditText edit_ssid;
     EditText edit_interval;
+    EditText edit_server;
 
 
 
@@ -79,8 +81,10 @@ public class MainActivity extends AppCompatActivity {
         bt_ctl_bat = (Button)findViewById(R.id.bt_ctl_bat);
         bt_ctl_rtc_update = (Button)findViewById(R.id.bt_ctl_rtc_update);
         bt_ctl_reset = (Button)findViewById(R.id.bt_ctl_reset);
+        bt_ctl_server = (Button)findViewById(R.id.bt_ctl_server);
         edit_ssid = (EditText)findViewById(R.id.edit_ssid);
         edit_interval = (EditText)findViewById(R.id.edit_interval);
+        edit_server = (EditText)findViewById(R.id.edit_server);
 
 
 
@@ -205,6 +209,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v){
                 send("6");
                 tv_tx.setText("6");
+            }
+        });
+        bt_ctl_server.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                String tmp = "7";
+                tmp += edit_server.getText().toString();
+                send(tmp);
+                tv_tx.setText(tmp);
             }
         });
     }
